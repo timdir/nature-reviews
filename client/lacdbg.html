@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <title></title>
+</head>
+<!-- All park pages are identical with the exception of 2 lines -->
+<body class=park-page onload=getParkData(2) id=park_id-2>  <!-- 1/2 replace park_id -->
+    <button class="homeButtons homeButton" onclick="openHomePage()">Home</button>
+    <button class="homeButtons loginButton" onclick="openLoginPage()">Login</button>
+    <button class="homeButtons signupButton" onclick="openSignUpPage()">Sign Up</button>
+    <button class="homeButtons logoutButton" onclick="logoutUser()" id="logoutButton" >Logout</button></br>
+
+    <p id=greeting>Hello, <span id=greeting-name>Guest</span>!</p>
+    <span class=park-title id=park-title></span></br></br>
+    
+    <!-- 2/2 replace image for park page -->
+    <img src="img/lacdbg.jpg"></br></br>
+    
+    <h2>Description</h2>
+    <span id=park-description></span></br></br>
+
+    
+    
+
+    <h2>Comments</h2>
+    <div class=comment id=comment_1>
+        <hr>
+        <span class=comment-user id=comment-user_1></span><span class=user-says> says...</span>
+        <button class=edit-button id=edit-button_1 onclick="editComment(this)">Edit</button>
+        <button class=done-edit-button id=done-edit-button_1 onclick="putComment(this)">Done Editing</button>
+        <button class=delete-button id=delete-button_1 onclick="deleteComment(this)">Delete</button></br>
+        <span class=comment-time id=comment-time_1></span></br></br>
+        <span class=comment-body id=comment-body_1></span></br>
+        <textarea class=comment-edit-ta id=comment-edit-ta_1></textarea></br></br></br>
+    </div>
+    
+    
+    
+    <div class=comment-box id=comment-box>
+        <hr></br>
+        <textarea id=comment-ta placeholder="Sign up or login to post a comment!"></textarea></br></br>
+        <button class="homeButtons loginButton" onclick="openLoginPage()">Login</button>
+        <button class="homeButtons signupButton" onclick="openSignUpPage()">Sign Up</button>
+        <button id="enterButton" class="homeButtons enterButton" onclick="postComment()">Enter</button>
+        
+        <!--Leave some blank space at the bottom-->
+        </br></br></br>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+img {
+    width: 500px;
+}
+
+hr {
+    width: 500px;
+    margin: 0px 100px 0px 0px;
+}
+
+textarea {
+    width: 375px;
+    height: 80px;
+    resize: none;
+}
+
+.login-page, .signup-page {
+    background-color: rgb(228, 228, 228);
+}
+
+.park-page {
+    background-color: rgb(229, 255, 217);
+}
+
+.park-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.homeButtons {
+    background-color: rgb(204, 204, 204);
+    color: black;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    font-size: 14px;
+    margin: 1px 1px;
+    border-radius: 10px;
+}
+
+.comment-user {
+    font-weight: bold;
+}
+
+.comment-time {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.logoutButton {
+    visibility: hidden;
+}
+
+.homeButton {
+    float: left;
+}
+
+.enterButton {
+    visibility: hidden;
+}
+
+.edit-button {
+    margin-left: 30px;
+    visibility: hidden;
+}
+
+.done-edit-button {
+    margin-left: 7px;
+    visibility: hidden;
+}
+
+.delete-button {
+    /*margin-left: 7px;*/
+    visibility: hidden;
+}
+
+.comment-edit-ta {
+    visibility: hidden;
+    margin-bottom: -80px;
+}
+
+#comment-ta {
+    /*The 1 line below can be used to disable input of the textarea*/
+    pointer-events: none; 
+}
+
+.loginButton, .signupButton {
+    visibility: hidden;
+}
+
+.greeting {
+    visibility: hidden;
+}
+
+#admin-page {
+    background-color: black;
+    color: white;
+}
+
+.method {
+    color: blue;
+    padding-right: 30px;
+}
+
+.endpoint {
+    padding-right: 60px;
+}
+
+.method-head {
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.endpoint-head {
+    font-weight: bold;
+    padding-right: 60px;
+}
+
+.requests-head {
+    font-weight: bold;
+}

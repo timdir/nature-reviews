@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "180c4e88-8f7d-4161-820c-0152ba6a0650",
+		"name": "nature-reviews_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_park-id-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/parks/1",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"parks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_park-id-132",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/parks/132",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"parks",
+						"132"
+					]
+				},
+				"description": "this park_id does not exist, we should get 404 error"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/comments/1",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_users-admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"admin\",\n    \"password\":\"ty^D{jQXT7I93d6gbkym,ki4g.7u?>[r5|G0!!Qv6\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/users/admin",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"users",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_users-signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"clair\",\n    \"password\":\"4aJ2&wPN,xkla\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/users/signup",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_users-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"default\",\n    \"password\":\"1234\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/users/login",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_key\":\"osGxRhi4plDf7wvEES2iDA==\",\n    \"username\":\"default\",\n    \"park_id\":\"1\",\n    \"c_date\":\"2021-03-13 17:28:02 UTC\",\n    \"c_comment\":\"I very much enjoyed the scenery at Garibaldi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/comments",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_sessions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_key\":\"osGxRhi4plDf7wvEES2iDA==\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/sessions",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_sessions",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_key\":\"9hRE2etW0x3rIDjocK6Mdg==\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/sessions",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_comments",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"session_key\":\"osGxRhi4plDf7wvEES2iDA==\",\n\t\"username\":\"default\",\n\t\"park_id\":\"1\",\n\t\"c_date\":\"2021-03-13 18:49:53 UTC\",\n\t\"c_comment\":\"Also......  make sure to bring lots of water.  We ran out!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/comments",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_comments",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"session_key\":\"osGxRhi4plDf7wvEES2iDA==\",\n\t\"username\":\"default\",\n\t\"park_id\":\"1\",\n\t\"c_date\":\"2021-03-13 18:49:53 UTC\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://synopede.pw/nature-reviews/API/v1/comments",
+					"protocol": "https",
+					"host": [
+						"synopede",
+						"pw"
+					],
+					"path": [
+						"nature-reviews",
+						"API",
+						"v1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

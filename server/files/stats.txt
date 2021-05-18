@@ -1,0 +1,52 @@
+[
+  {
+    "method": "GET",
+    "endpoint": "/API/v1/parks/{park_id}",
+    "requests": 0
+  },
+  {
+    "method": "GET",
+    "endpoint": "/API/v1/comments/{park_id}",
+    "requests": 0
+  },
+  {
+    "method": "POST",
+    "endpoint": "/API/v1/users/signup",
+    "requests": 0
+  },
+  {
+    "method": "POST",
+    "endpoint": "/API/v1/users/login",
+    "requests": 0
+  },
+  {
+    "method": "POST",
+    "endpoint": "/API/v1/users/admin",
+    "requests": 0
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/API/v1/sessions",
+    "requests": 0
+  },
+  {
+    "method": "POST",
+    "endpoint": "/API/v1/sessions",
+    "requests": 0
+  },
+  {
+    "method": "POST",
+    "endpoint": "/API/v1/comments",
+    "requests": 0
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/API/v1/comments",
+    "requests": 0
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/API/v1/comments",
+    "requests": 0
+  }
+]
